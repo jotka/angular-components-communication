@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pipes": {
+    "component-communication": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -48,18 +48,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "components-communication:build"
+            "browserTarget": "component-communication:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "components-communication:build:production"
+              "browserTarget": "component-communication:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "components-communication:build"
+            "browserTarget": "component-communication:build"
           }
         },
         "test": {
@@ -91,7 +91,7 @@
         }
       }
     },
-    "pipes-e2e": {
+    "component-communication-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -100,7 +100,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "components-communication:serve"
+            "devServerTarget": "component-communication:serve"
           }
         },
         "lint": {
@@ -115,7 +115,7 @@
       }
     }
   },
-  "defaultProject": "components-communication",
+  "defaultProject": "component-communication",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "my",
